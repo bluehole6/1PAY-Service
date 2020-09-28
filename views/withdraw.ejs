@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+	<title>Crypto Mobile Template</title>
+
+	<!-- Google font file. If you want you can change. -->
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,900" rel="stylesheet">
+
+	<!-- Fontawesome font file css -->
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+	<!-- Template global css file. Requared all pages -->
+	<link rel="stylesheet" type="text/css" href="css/global.style.css">
+</head>
+
+<body>
+	
+	<div class="wrapper">
+		<div class="nav-menu">
+			<nav class="menu">
+				
+				<!-- Menu navigation start -->
+				<div class="nav-container">
+					<ul class="main-menu">
+						<li class="">
+							<a href="index.html"><img src="img/content/icons/1.png" alt=""><strong>Dashboard</strong> </a>
+						</li>
+						<li class="">
+							<a href="wallet.html"><img src="img/content/icons/2.png" alt=""><strong>My Walet</strong> </a>
+						</li>
+						<li class="">
+							<a href="trading.html"><img src="img/content/icons/3.png" alt=""><strong>Crypto Trade</strong> </a>
+						</li>
+						<li class="">
+							<a href="buy-sell.html"><img src="img/content/icons/6.png" alt=""><strong>Buy & sell</strong> </a>
+						</li>
+						<li class="">
+							<a href="profile.html"><img src="img/content/icons/5.png" alt=""><strong>Trader Profile</strong> </a>
+						</li>
+						<li class="">
+							<a href="affiliate.html"><img src="img/content/icons/4.png" alt=""><strong>Affiliate System</strong> </a>
+						</li>
+						<li class="">
+							<a href="setting.html"><img src="img/content/icons/11.png" alt=""><strong>Settings</strong> </a>
+						</li>
+						<li class="active">
+							<a href="javascript:void(0);"><img src="img/content/icons/9.png" alt=""><strong>Login/Register</strong> <span class="fa fa-angle-down"></span></a>
+							<ul>
+								<li><a href="login.html" data-loader="show">Login</a></li>
+								<li class="active"><a href="signup.html" data-loader="show">Register</a></li>
+								<li><a href="forgot-password.html" data-loader="show">Forgot Password</a></li>
+							</ul>
+						</li>
+						
+						<li>
+							<a href="javascript:void(0);"><img src="img/content/icons/8.png" alt=""> <strong>Wizards</strong> <span class="fa fa-angle-down"></span></a>
+							<ul>
+								<li><a href="wizard-default.html" data-loader="show">Wizard Default</a></li>
+								<li><a href="wizard-fullscreen.html" data-loader="show">Wizard Fullscreen</a></li>
+							</ul>
+						</li>
+						<li class="">
+							<a href="charts.html"><img src="img/content/icons/14.png" alt=""><strong>Charts</strong> </a>
+						</li>
+						<li>
+							<a href="forms.html" data-loader="show"><img src="img/content/icons/7.png" alt=""><strong>Form Elements</strong></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/content/icons/10.png" alt=""><strong> Components</strong> <span class="fa fa-angle-down"></span></a>
+							<ul>
+								<li><a href="tab-bottom.html" data-loader="show">Tab (Bottom)</a></li>
+								<li><a href="tab-top.html" data-loader="show">Tab (Top)</a></li>
+								<li><a href="accordion.html" data-loader="show">Accordion</a></li>
+								<li><a href="popup.html" data-loader="show">Popup Modal</a></li>
+								<li><a href="checkbox-list.html" data-loader="show">Check List</a></li>
+								<li><a href="link-list.html" data-loader="show">Link List</a></li>
+								<li><a href="link-list-two-column.html" data-loader="show">Two Column Links</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><img src="img/content/icons/15.png" alt=""><strong> Pages</strong> <span class="fa fa-angle-down"></span></a>
+							<ul>
+								<li><a href="profile.html" data-loader="show">User Profile</a></li>
+								<li><a href="search-result.html" data-loader="show">Search Results</a></li>
+								<li><a href="contact.html" data-loader="show">Contact</a></li>
+								<li><a href="blank.html" data-loader="show">Blank Page</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			<!-- Menu navigation end -->
+			</nav>
+		</div>
+		<div class="wrapper-inline">
+			<!-- Header area start -->
+			<header> <!-- extra class no-background -->
+				<a class="go-back-link" href="javascript:history.back();"><i class="fa fa-arrow-left"></i></a>
+				<h1 class="page-title">이체</h1>
+				<div class="navi-menu-button">
+					<em></em>
+					<em></em>
+					<em></em>
+				</div>
+			</header>
+			<!-- Header area end -->
+			<!-- Page content start -->
+			<main>
+                <form id="withdrawForm" action="/withdraw" method="POST">
+				<div class="container">
+					<div class="form-divider"></div>
+					<div class="form-label-divider"><span>이체</span></div>
+                    <div class="form-divider"></div>
+                    <div class="form-row no-padding">
+                        
+                        <select class="form-element" >
+                            <option> &nbsp;출금 계좌 선택</option>
+
+
+                        </select>
+                    </div>
+                    <div class="form-divider"></div>
+
+
+					<div class="form-row-group with-icons">
+						<div class="form-row no-padding">
+							<i class="fa fa-user"></i>
+							<input type="text" name="tran_amt" id="tran_amt" class="form-element" placeholder="이체금액">
+                        </div>
+                        <div class="form-row no-padding">
+							<i class="fa fa-language"></i>
+							<select class="form-element" name="recv_client_bank_code" id="recv_client_bank_code">
+                                <option> &nbsp;이체은행 선택</option>
+								<option value="097">오픈뱅킹</option>
+								<option value="2">국민은행</option>
+                                <option value="3">우리은행</option>
+                                <option value="4">신한은행</option>
+                                <option value="5">하나은행</option>
+                                <option value="6">농협은행</option>
+                                <option value="7">SC은행</option>
+                                <option value="8">우체국</option>
+
+							</select>
+						</div>
+                        <div class="form-row no-padding">                           
+							<i class="fa fa-user"></i>                                
+                            <input type="text" name="recv_client_account_num" id="recv_client_account_num" class="form-element" placeholder="계좌번호 입력">                    
+                        </div>
+                        <div class="form-row no-padding">                           
+							<i class="fa fa-user"></i>                                
+                            <input type="text" name="recv_client_name" id="recv_client_name" class="form-element" placeholder="받는 분 성함">                    
+                        </div>
+                        <div class="form-row no-padding">                           
+							<i class="fa fa-user"></i>                                
+                            <input type="text" name="wd_print_content" id="wd_print_content" class="form-element" placeholder="내 통장표시">                    
+                        </div>
+                        <div class="form-row no-padding">                           
+							<i class="fa fa-user"></i>                                
+                            <input type="text" name="dps_print_content" id="dps_print_content" class="form-element" placeholder="받는 통장표시">                    
+						</div>
+					</div>
+                    </form>
+                    <div class="form-divider"></div>
+                    
+                    <div class="form-divider"></div>
+					<div class="form-row">
+						<a href="#" class="button circle block orange" id="withdrawBtn">이체하기</a>
+					</div>
+
+				</div>
+			</main>
+			<!-- Page content end -->
+		</div>
+	</div>
+
+
+	<!--Page loader DOM Elements. Requared all pages-->
+	<div class="sweet-loader">
+		<div class="box">
+		  	<div class="circle1"></div>
+		  	<div class="circle2"></div>
+		  	<div class="circle3"></div>
+		</div>
+	</div>
+
+	<!-- JQuery library file. requared all pages -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<!-- Template global script file. requared all pages -->
+    <script src="js/global.script.js"></script>
+
+    <script>
+		function getQueryStringObject() {
+            var a = window.location.search.substr(1).split('&');
+            if (a == "") return {};
+            var b = {};
+            for (var i = 0; i < a.length; ++i) {
+                var p = a[i].split('=', 2);
+                if (p.length == 1)
+                    b[p[0]] = "";
+                else
+                    b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
+            }
+            return b;
+		}
+
+		var qs = getQueryStringObject();
+		console.log(qs);
+
+        $("#withdrawBtn").click(function(){
+            var tran_amt
+            // var recv_client_bank_code = $("#recv_client_bank_code").val();
+            // var recv_client_account_num = $("#recv_client_account_num").val();
+            // var recv_client_name = $("#recv_client_name").val();
+            // var wd_print_content = $("#wd_print_content").val();
+            // var dps_print_content = $("#dps_print_content").val();
+
+            var jwtToken = sessionStorage.getItem('jwtToken');
+            $.ajax({
+                type : "POST",                       
+                url : "/withdraw",
+                headers : {
+                    'ourtoken' : jwtToken
+                },
+                data : {
+                    fin_use_num : "199162889057883841851650",
+                    tran_amt : tran_amt,
+                    recv_client_bank_code : recv_client_bank_code,
+                    recv_client_account_num : recv_client_account_num,
+                    recv_client_name : recv_client_name,
+                    wd_print_content : wd_print_content,
+					dps_print_content : dps_print_content,
+
+					worker_name : qs.name,
+					worker_bank_code : qs.bank_code,
+					worker_account_num : qs.account_num
+					
+                }, 
+                success : function(res){
+                    if(res.result == "success"){
+                        console.log("withdraw success");
+                        alert("이체 완료되었습니다.");
+                        //window.location.href = "/main";
+                    }else{
+                    if(res.result == "empty"){
+                            console.log("withdraw failed");
+                            alert("기본정보를 모두 입력해주세요.");
+                        }               
+                    }
+                }
+            })
+        })
+    </script>
+    
+</body>
+
+</html>

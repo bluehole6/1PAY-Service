@@ -1,0 +1,25 @@
+{
+  "name": "fintech",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "directories": {
+    "example": "example"
+  },
+  "dependencies": {
+    "date-utils": "^1.2.21",
+    "ejs": "^3.1.2",
+    "express": "^4.17.1",
+    "instascan": "^1.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mysql": "^2.18.1",
+    "request": "^2.88.2",
+    "xml2js": "^0.4.23"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

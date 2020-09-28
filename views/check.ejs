@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+	<title>Crypto Mobile Template</title>
+
+	<!-- Google font file. If you want you can change. -->
+	<link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,900" rel="stylesheet">
+
+	<!-- Fontawesome font file css -->
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+	<!-- Animate css file for css3 animations. for more : https://daneden.github.io/animate.css -->
+	<!-- Only use animate action. If you dont use animation, you don't have to add.-->
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/cryptocoins.css">
+	<link rel="stylesheet" type="text/css" href="plugins/c3-chart/c3.css">
+
+	<!-- Template global css file. Requared all pages -->
+	<link rel="stylesheet" type="text/css" href="css/global.style.css">
+
+	<!-- Swiper slider css file -->
+	<link rel="stylesheet" href="css/swiper.min.css">
+
+	<!--turbo slider plugin css file -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="plugins/turbo-slider/turbo.css">
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+	
+	<div class="wrapper ">
+		<div class="nav-menu">
+			<nav class="menu">
+			
+				<!-- Menu navigation start -->
+				<div class="nav-container">
+					<ul class="main-menu">
+						<li class="active">
+							<a href="index.html"><img src="img/content/icons/1.png" alt=""><strong class="special">Dashboard</strong> </a>
+						</li>
+						<li class="">
+							<a href="wallet.html"><img src="img/content/icons/2.png" alt=""><strong class="special">My Walet</strong> </a>
+						</li>
+						<li class="">
+							<a href="trading.html"><img src="img/content/icons/3.png" alt=""><strong class="special">Crypto Trade</strong> </a>
+						</li>
+						<li class="">
+							<a href="buy-sell.html"><img src="img/content/icons/6.png" alt=""><strong class="special">Buy & sell</strong> </a>
+						</li>
+						<li class="">
+							<a href="profile.html"><img src="img/content/icons/5.png" alt=""><strong class="special">Trader Profile</strong> </a>
+						</li>
+						<li class="">
+							<a href="affiliate.html"><img src="img/content/icons/4.png" alt=""><strong class="special">Affiliate System</strong> </a>
+						</li>
+						<li class="">
+							<a href="setting.html"><img src="img/content/icons/11.png" alt=""><strong class="special">Settings</strong> </a>
+						</li>
+						<li>
+							<a href="javascript:void(0);"><img src="img/content/icons/9.png" alt=""><strong class="special">Login/Register</strong> <span class="fa fa-angle-down"></span></a>
+							<ul>
+								<li><a href="login.html" data-loader="show">Login</a></li>
+								<li><a href="signup.html" data-loader="show">Register</a></li>
+								<li><a href="forgot-password.html" data-loader="show">Forgot Password</a></li>
+							</ul>
+						</li>
+						
+						<li>
+							<a href="javascript:void(0);"><img src="img/content/icons/8.png" alt=""> <strong class="special">Wizards</strong> <span class="fa fa-angle-down"></span></a>
+							<ul>
+								<li><a href="wizard-default.html" data-loader="show">Wizard Default</a></li>
+								<li><a href="wizard-fullscreen.html" data-loader="show">Wizard Fullscreen</a></li>
+							</ul>
+						</li>
+						<li class="">
+							<a href="charts.html"><img src="img/content/icons/14.png" alt=""><strong class="special">Charts</strong> </a>
+						</li>
+						<li>
+							<a href="forms.html" data-loader="show"><img src="img/content/icons/7.png" alt=""><strong class="special">Form Elements</strong></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/content/icons/10.png" alt=""><strong class="special"> Components</strong> <span class="fa fa-angle-down"></span></a>
+							<ul>
+								<li><a href="tab-bottom.html" data-loader="show">Tab (Bottom)</a></li>
+								<li><a href="tab-top.html" data-loader="show">Tab (Top)</a></li>
+								<li><a href="accordion.html" data-loader="show">Accordion</a></li>
+								<li><a href="popup.html" data-loader="show">Popup Modal</a></li>
+								<li><a href="checkbox-list.html" data-loader="show">Check List</a></li>
+								<li><a href="link-list.html" data-loader="show">Link List</a></li>
+								<li><a href="link-list-two-column.html" data-loader="show">Two Column Links</a></li>
+							</ul>
+						</li>
+						<li class="">
+							<a href="#"><img src="img/content/icons/15.png" alt=""><strong class="special"> Pages</strong> <span class="fa fa-angle-down"></span></a>
+							<ul>
+								<li class=""><a href="profile.html" data-loader="show">User Profile</a></li>
+								<li><a href="search-result.html" data-loader="show">Search Results</a></li>
+								<li><a href="contact.html" data-loader="show">Contact</a></li>
+								<li><a href="blank.html" data-loader="show">Blank Page</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			<!-- Menu navigation end -->
+			</nav>
+		</div>
+
+		<div class="wrapper-inline">
+			<!-- Header area start -->
+			<header class="no-background"> <!-- extra class no-background -->
+
+				<div class="search-button" data-search="open">
+					<img src="img/content/notification1.png" class="not-icon1" alt="">
+					<img src="img/content/notification2.png" class="not-icon2" alt="">
+				</div>
+
+				<div class="navi-menu-button">
+					<em></em>
+					<em></em>
+					<em></em>
+				</div>
+
+			</header>
+			<!-- Header area end -->
+
+			<!--NOTIFICATION BOX CONTENT START-->
+			<div class="search-form">
+				<span class="close-search-form" data-search="close"><i class="fa fa-times"></i> </span>
+				<form>
+					<div class="search-input">
+						<input type="text" name="q" class="form-element" placeholder="Search...">
+						<button type="submit" class="search-input-btn"><i class="fa fa-arrow-right"></i></button>
+					</div>
+				</form>
+			    <ul class="notification-list list-unstyled">
+					<li>
+						<div class="d-flex align-items-center justify-content-between">
+                          <div class="d-flex align-items-center">
+                            <div class="">
+                              <h5 class="coin-name">You have 3 notifications</h5>
+                            </div>
+                          </div>
+                          <div>
+                            <a href=""><small class="text-muted d-block">mark all as read</small></a>
+                          </div>
+                        </div>
+					</li>
+					<li>
+						<div class="d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center">
+	                            <div class="notice-icon available">
+	                                <i class="fa fa-check"></i>
+	                            </div>
+	                            <div class="ml-10">
+	                              <h4 class="coin-name">Successful transaction 0.01 BTC</h4>
+	                              <small class="text-muted">15 min ago</small>
+	                            </div>
+                            </div>
+                        </div>
+					</li>
+					<li>
+						<div class="d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center">
+	                            <div class="notice-icon away">
+	                                <i class="fa fa-clock-o"></i>
+	                            </div>
+	                            <div class="ml-10">
+	                              <h4 class="coin-name">4 of Pending Transactions!</h4>
+	                              <small class="text-muted"> 12 hours ago</small>
+	                            </div>
+                            </div>
+                        </div>
+					</li>
+					<li>
+						<div class="d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center">
+	                            <div class="notice-icon busy">
+	                                <i class="fa fa-times"></i>
+	                            </div>
+	                            <div class="ml-10">
+	                              <h4 class="coin-name">Cancelled Order of 200 ICO</h4>
+	                              <small class="text-muted">15 Feb - 08:34</small>
+	                            </div>
+                            </div>
+                        </div>
+					</li>
+					<li>
+						<div class="d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center">
+	                            <div class="notice-icon available">
+	                                <i class="fa fa-check"></i>
+	                            </div>
+	                            <div class="ml-10">
+	                              <h4 class="coin-name">Great Speed Notify of 1.34 LTC</h4>
+	                              <small class="text-muted">24 jan - 20:43</small>
+	                            </div>
+                            </div>
+                        </div>
+					</li>
+					<li>
+						<div class="d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center">
+	                            <a href="" class="text-muted">Read all notifications</a>
+                            </div>
+                        </div>
+					</li>
+					
+				</ul>
+			</div>
+			<!--NOTIFICATION BOX CONTENT END-->
+
+			<!-- Page content start -->
+			<main class="margin mt-0">
+
+				<div class="dash-balance">
+					<div class="dash-content relative">
+						<center>
+							<h1 >근태 관리 / 출금 이체</h3>
+						</center>
+						
+						<div class="notification">
+							<a href="/qrreader"> QR코드 리더기</a>
+						</div>
+					</div>
+                </div>
+                
+                <center>
+                    <table id="check_table" style="width: 50%;">
+                        <thead>
+                            <tr>
+								<th>이름</th>
+								<th>은행코드</th>
+                                <th>계좌번호</th>
+                                <th>예상 근로 시간</th>
+								<th>시급</th>
+								<th>출근 시간</th>
+                                <th>출금이체</th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </center>
+				
+
+				<footer>
+
+				</footer>
+			</main>
+			<!-- Page content end -->
+		</div>
+	</div>
+
+	<!--Page loader DOM Elements. Requared all pages-->
+	<div class="sweet-loader">
+		<div class="box">
+		  	<div class="circle1"></div>
+		  	<div class="circle2"></div>
+		  	<div class="circle3"></div>
+		</div>
+	</div>
+
+	<!-- JQuery library file. requared all pages -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+
+	<!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+
+	 <!-- Initialize Swiper -->
+ 	
+  	<!-- Flot Charts -->
+	<script src="plugins/c3-chart/c3.min.js"></script>
+	<script src="plugins/c3-chart/d3.min.js"></script>
+	<script src="plugins/c3-chart/c3.custom.js"></script>
+  	<!-- Flot Charts -->
+	<script src="plugins/flot/jquery.flot.min.js"></script>
+	<script src="plugins/flot/jquery.flot.time.min.js"></script>
+	<script src="plugins/flot/jquery.flot.pie.min.js"></script>
+	<script src="plugins/flot/jquery.flot.tooltip.min.js"></script>
+	<script src="plugins/flot/jquery.flot.resize.min.js"></script>
+    <!-- Sparkline-->
+    <script src="plugins/jquery-sparkline/jquery.sparkline.js"></script>
+
+	<!-- Template global script file. requared all pages -->
+	<script src="js/app-charts.js"></script>
+	<script src="js/global.script.js"></script>
+
+    <script>
+		
+		// setTimeout(function(){
+		// location.reload();
+		// },1000);
+
+		var regexp = /\B(?=(\d{3})+(?!\d))/g;
+                                    
+		$(document).on("click","#withdrawBtn",function(){
+			var str = ""
+            var tdArr = new Array();    // 배열 선언
+            var checkBtn = $(this);
+
+			var tr = checkBtn.parent().parent();
+    		var td = tr.children();
+			console.log("클릭한 Row의 모든 데이터 : "+tr.text());
+
+			var name = td.eq(0).text();
+			var bank_code = td.eq(1).text();
+			var account_num = td.eq(2).text();
+			var expect_time = td.eq(3).text();
+			var hourly = td.eq(4).text();
+			var total = (expect_time * hourly).toString().replace(regexp, ',')
+			
+			var jwtToken = sessionStorage.getItem('jwtToken')
+
+			if(confirm(name + "님, " + total +"원 맞습니까?")){
+
+				if ($(this).val()=="이체"){
+
+					$.ajax({
+						type : "POST",                       
+						url : "/withdraw",
+						headers : {
+							'ourtoken' : jwtToken
+						},
+						data : {
+							name : name,
+							bank_code : bank_code,
+							account_num : account_num,
+							expect_time : expect_time,
+							hourly : hourly
+						},
+						success : function(res){
+							if(res.result == "success"){         
+								alert("성공적으로 에스크로 계좌로 "+ res.tran_amt.toString().replace(regexp, ',') + "원이 출금이체 되었습니다.")
+								// change button
+								checkBtn.val('완료'); 
+								checkBtn.
+								console.log("withdraw success");
+							}else{
+								console.log("withdraw failure");
+							}
+						}
+					});
+						
+					
+
+				}
+				else{
+					$(this).val('이체');
+				} 
+				
+
+				
+			}else{
+				return
+			}
+		});	
+		
+		
+	
+        $.ajax({
+            type : "POST",                       
+            url : "/check",
+            success : function(res){
+                if(res.check == "success"){
+                    var result = res.result
+					var i;
+					var btn = '<input type="button" id="withdrawBtn" value="이체">';
+                    console.log(result);
+                    $('#check_table > tbody').empty();
+
+                    for(i = 0; i < result.length; i++){
+
+                        $('#check_table > tbody:last').append('<tr><td id="name">' + result[i].name + '</td><td id="bank_code">' + result[i].bank_code + '</td><td id="account_num">' +  result[i].account_num  + '</td><td>' +  result[i].expect_time  + '</td><td>' +  result[i].hourly  + '</td><td>'  +  result[i].start_time  + '</td><td>' + btn + '</td></tr>');
+
+                    }
+                        
+                    console.log("cart load success");
+                }else{
+                    console.log("cart load failed");
+                }
+            }
+		});	
+		
+
+		
+
+    </script>
+
+
+</body>
+
+</html>
