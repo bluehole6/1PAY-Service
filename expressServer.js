@@ -227,6 +227,7 @@ app.post('/login', function(req, res){
     })
 })
 
+// 등록 계좌 리스트 불러오기
 app.post('/list', auth, function(req, res){
 
     // api response body
@@ -265,6 +266,7 @@ app.post('/list', auth, function(req, res){
     })
 })
 
+// 계좌 잔액 확인
 app.post("/balance", auth, function(req, res){
     var userEmail = req.decoded.userEmail;
     var fin_use_num = req.body.fin_use_num;
@@ -308,6 +310,7 @@ app.post("/balance", auth, function(req, res){
  
 })
 
+// 이체 내역 확인
 app.post("/transactionlist", auth, function(req, res){
     var userEmail = req.decoded.userEmail;
     var fin_use_num = req.body.fin_use_num;
@@ -361,6 +364,7 @@ app.post("/transactionlist", auth, function(req, res){
     })
 })
 
+// 계좌 이체
 app.post("/withdraw", auth, function(req, res){
     
     console.log("withdraw")
@@ -489,7 +493,8 @@ app.post("/withdraw", auth, function(req, res){
 })
 
 
-// QR 코드 읽고 서버에 저장하기
+// 출퇴근 시에 QR코드 읽고 데이터 저장
+// 그 과정에서 이체하기
 app.post("/qr_info", function(req, res){
 
     // 한글 인코딩 문제 발생
@@ -716,6 +721,7 @@ app.post("/qr_info", function(req, res){
     })
 })
 
+// 이체 내역 확인
 app.post("/check", function(req, res){
 
     var sql = "SELECT * FROM worker_start"
