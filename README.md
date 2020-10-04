@@ -27,4 +27,4 @@
 
 https://drive.google.com/file/d/1K_IwFJS0GDAxgDGeY9G0nznXLwN7XQaZ/view?usp=sharing
 
-　* 미리보기는 화질이 좋지 않습니다. <br></br> ** Back-End의 기능 구현에 집중하였기 때문에, Front-End의 디자인은 프레임만 만들었다고 보시면 됩니다.
+　* 미리보기는 화질이 좋지 않습니다. <br></br>　* Back-End의 기능 구현에 집중하였기 때문에, Front-End의 디자인은 프레임만 만들었다고 보시면 됩니다.
